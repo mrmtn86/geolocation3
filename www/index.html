@@ -29,6 +29,7 @@
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta http-equiv="content_security_policy": "script-src 'self' https://maps.googleapis.com https://maps.gstatic.com; object-src 'self'">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -37,7 +38,7 @@
     </head>
     <body>
         <div class="app">
-            <h1>Apache Cordova  oldu lan</h1>
+            <h1>Apache Cordova  jhgkjh oldu lan</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
@@ -45,5 +46,18 @@
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+
+
+        <script type="text/javascript">
+    app.initialize();
+
+        </script>
+
+        <script type="text/javascript" src="js/googlemap.js"></script>
+        <script type="text/javascript" src="js/googleMapCore.js"></script>
+
+       <!-- 
+           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpWwxqBtwp1qFHy3VuVV166TaCdP3-d7I"></script>
+            --> 
     </body>
 </html>

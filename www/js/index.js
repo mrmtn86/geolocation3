@@ -16,6 +16,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var map;
+function initMap() {
+    console.log("map init cnm degisikklikk");
+    map = new GoogleMap();
+    map.initialize();
+}
+var watchId;
+var push;
 var app = {
     // Application Constructor
     initialize: function() {
@@ -32,8 +40,10 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+    onDeviceReady: function () {
+        initMap();
+        app.receivedEvent('deviceready'); 
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
